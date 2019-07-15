@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'basic.dart';
+import 'list.dart';
 
 void main() => runApp(MyApp());
 
@@ -50,10 +51,9 @@ class _MyHomePageState extends State<MyHomePage> {
     return MaterialApp(
         title: 'Flutter Boost example',
         debugShowCheckedModeBanner: false,
-        initialRoute: '/test',//调试的时候可以打开
+        // initialRoute: '/test',//调试的时候可以打开
         routes: {
-          // '/': (context) => CommentSuggest({"Cookie":" _gm_token=7e48641558699683; sessionid=nb3ze4ur7ucosln8sd8pzwojddenv9ym; _gtid=a1bc0a387e1911e996b9525400fa516d4094"}),
-          '/': (context) => BasicExample() ,
+          '/': (context) => ListDemo() ,
         },//调试的时候可以打开
         theme: new ThemeData(
         primaryColor: Colors.white,
